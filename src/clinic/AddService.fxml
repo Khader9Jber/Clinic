@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox style="-fx-background-color: #323232; -fx-background-radius: 15;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.AddService">
+   <children>
+      <AnchorPane maxHeight="1.7976931348623157E308" prefHeight="500.0" prefWidth="425.0" VBox.vgrow="ALWAYS">
+         <padding>
+            <Insets bottom="30.0" />
+         </padding>
+         <children>
+            <Label text="Label" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="40.0" />
+            <Label text="اضافة خدمة" textFill="#ffac41" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="save" layoutX="52.0" layoutY="374.0" style="-fx-border-color: #ffac41; -fx-border-radius: 3; -fx-background-radius: 3;" text="حفظ" textFill="#ffac41" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="40.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="name" alignment="CENTER_RIGHT" focusColor="#ffac41" labelFloat="true" layoutX="100.0" layoutY="107.0" prefWidth="200.0" promptText="الاسم" stylesheets="@styles/formDesign.css" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="120.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="cost" alignment="CENTER_RIGHT" focusColor="#ffac41" labelFloat="true" layoutX="110.0" layoutY="117.0" prefWidth="200.0" promptText="السعر" stylesheets="@styles/formDesign.css" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="200.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="cancle" layoutX="116.0" layoutY="419.0" style="-fx-border-color: #ffac41; -fx-border-radius: 3; -fx-background-radius: 3;" text="إلغاء" textFill="#ffac41" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="120.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXComboBox fx:id="section" focusColor="#ffac41" labelFloat="true" layoutX="472.0" layoutY="140.0" nodeOrientation="RIGHT_TO_LEFT" prefWidth="200.0" promptText="القسم" styleClass="jfx-text-field" unFocusColor="BLACK" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="280.0">
+               <stylesheets>
+                  <URL value="@formDesign.css" />
+                  <URL value="@ComboBox.css" />
+               </stylesheets>
+            </JFXComboBox>
+         </children>
+      </AnchorPane>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</VBox>

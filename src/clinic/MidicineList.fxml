@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.DashboardController">
+   <content>
+      <VBox style="-fx-background-color: #323232;">
+         <children>
+            <AnchorPane VBox.vgrow="ALWAYS">
+               <children>
+                  <Label text="قائمة الأدوية" textFill="#ffac41" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label text="الاستقبال / الجهاز 1" textFill="#ff1e56" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0" />
+               </children>
+               <padding>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </padding>
+            </AnchorPane>
+            <AnchorPane maxHeight="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+               <children>
+                  <AnchorPane fx:id="pane" layoutX="37.0" layoutY="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+                     <children>
+                        <AnchorPane layoutX="35.0" layoutY="18.0" minHeight="100.0" minWidth="100.0" style="-fx-background-color: #000; -fx-border-radius: 7; -fx-background-radius: 7;">
+                           <children>
+                              <JFXButton alignment="CENTER" layoutX="-56.0" layoutY="-10.0" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-width: 3;" text="تروفين" textFill="#ffac41" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font size="35.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </JFXButton>
+                              <ImageView fitHeight="113.0" fitWidth="173.0" layoutX="7.0" layoutY="-40.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-13.0" AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="0.0">
+                                 <image>
+                                    <Image url="@../image/94262519_2961308233964257_1818406883027845120_n.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label text="متوفر 50" textFill="#ffac41" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="70.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="45.0" layoutY="28.0" minHeight="100.0" minWidth="100.0" style="-fx-background-color: #000; -fx-border-radius: 7; -fx-background-radius: 7;">
+                           <children>
+                              <JFXButton alignment="CENTER" layoutX="-56.0" layoutY="-10.0" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-width: 3;" text="تروفين" textFill="#ffac41" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font size="35.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </JFXButton>
+                              <ImageView fitHeight="113.0" fitWidth="173.0" layoutX="7.0" layoutY="-40.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-13.0" AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="0.0">
+                                 <image>
+                                    <Image url="@../image/94262519_2961308233964257_1818406883027845120_n.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label text="متوفر 50" textFill="#ffac41" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="70.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="45.0" layoutY="28.0" minHeight="100.0" minWidth="100.0" style="-fx-background-color: #000; -fx-border-radius: 7; -fx-background-radius: 7;">
+                           <children>
+                              <JFXButton alignment="CENTER" layoutX="-56.0" layoutY="-10.0" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-width: 3;" text="تروفين" textFill="#ffac41" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font size="35.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </JFXButton>
+                              <ImageView fitHeight="113.0" fitWidth="173.0" layoutX="7.0" layoutY="-40.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-13.0" AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="0.0">
+                                 <image>
+                                    <Image url="@../image/94262519_2961308233964257_1818406883027845120_n.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label text="متوفر 50" textFill="#ffac41" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="70.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="45.0" layoutY="28.0" minHeight="100.0" minWidth="100.0" style="-fx-background-color: #000; -fx-border-radius: 7; -fx-background-radius: 7;">
+                           <children>
+                              <JFXButton alignment="CENTER" layoutX="-56.0" layoutY="-10.0" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-width: 3;" text="تروفين" textFill="#ffac41" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font size="35.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </JFXButton>
+                              <ImageView fitHeight="113.0" fitWidth="173.0" layoutX="7.0" layoutY="-40.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-13.0" AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="0.0">
+                                 <image>
+                                    <Image url="@../image/94262519_2961308233964257_1818406883027845120_n.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label text="متوفر 50" textFill="#ffac41" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="70.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="45.0" layoutY="28.0" minHeight="100.0" minWidth="100.0" style="-fx-background-color: #000; -fx-border-radius: 7; -fx-background-radius: 7;">
+                           <children>
+                              <JFXButton alignment="CENTER" layoutX="-56.0" layoutY="-10.0" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-width: 3;" text="تروفين" textFill="#ffac41" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font size="35.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </JFXButton>
+                              <ImageView fitHeight="113.0" fitWidth="173.0" layoutX="7.0" layoutY="-40.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-13.0" AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="0.0">
+                                 <image>
+                                    <Image url="@../image/94262519_2961308233964257_1818406883027845120_n.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label text="متوفر 50" textFill="#ffac41" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="70.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

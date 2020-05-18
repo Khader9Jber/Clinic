@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ScrollPane fitToHeight="true" fitToWidth="true" style="-fx-background-color: #323232;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <content>
+                <AnchorPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #323232;">
+                    <children>
+                        <AnchorPane minHeight="95.0" prefHeight="95.0" style="-fx-background-color: #323232; -fx-background-radius: 20; -fx-border-width: 0 0 1 0; -fx-border-color: #ffac41;" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+                            <children>
+                                <Label layoutX="524.0" layoutY="31.0" text="  الصفحة الرئيسة" textFill="#ffac41" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="30.0">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                        <GridPane hgap="50.0" layoutX="308.0" layoutY="299.0" minHeight="700.0" vgap="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="50.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" percentWidth="50.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" percentHeight="33.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+                                <RowConstraints minHeight="10.0" percentHeight="33.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" percentHeight="33.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label text="  Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                    <effect>
+                                        <DropShadow color="#ffac41" />
+                                    </effect>
+                                </Label>
+                            </children>
+                            <children>
+                                <VBox GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                    <children>
+                                        <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="150.0" minWidth="200.0" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-border-radius: 7;" text="     المرضى  " textFill="#ffac41" VBox.vgrow="ALWAYS">
+                                            <font>
+                                                <Font size="35.0" />
+                                            </font>
+                                            <padding>
+                                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                            </padding>
+                                            <graphic>
+                                                <FontAwesomeIconView fill="#ffac41" glyphName="USER" size="40" />
+                                            </graphic>
+                                        </JFXButton>
+                                    </children>
+                                    <effect>
+                                        <DropShadow color="#ffac41" />
+                                    </effect>
+                                </VBox>
+                                <VBox layoutX="428.0" layoutY="10.0">
+                                    <children>
+                                        <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="150.0" minWidth="200.0" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-border-radius: 7;" text="  الأقسام  " textFill="#ffac41" VBox.vgrow="ALWAYS">
+                                            <font>
+                                                <Font size="35.0" />
+                                            </font>
+                                            <padding>
+                                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                            </padding>
+                                            <graphic>
+                                                <FontAwesomeIconView fill="#ffac41" glyphName="SERVER" size="40" />
+                                            </graphic>
+                                        </JFXButton>
+                                    </children>
+                                    <effect>
+                                        <DropShadow color="#ffac41" />
+                                    </effect>
+                                </VBox>
+                                <VBox layoutX="10.0" layoutY="10.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <children>
+                                        <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="150.0" minWidth="200.0" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-border-radius: 7;" text="  الأطباء  " textFill="#ffac41" VBox.vgrow="ALWAYS">
+                                            <font>
+                                                <Font size="35.0" />
+                                            </font>
+                                            <padding>
+                                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                            </padding>
+                                            <graphic>
+                                                <FontAwesomeIconView fill="#ffac41" glyphName="USER_MD" size="40" />
+                                            </graphic>
+                                        </JFXButton>
+                                    </children>
+                                    <effect>
+                                        <DropShadow color="#ffac41" />
+                                    </effect>
+                                </VBox>
+                                <VBox layoutX="428.0" layoutY="240.0" GridPane.rowIndex="1">
+                                    <children>
+                                        <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="150.0" minWidth="200.0" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-border-radius: 7;" text="  الخدمات  " textFill="#ffac41" VBox.vgrow="ALWAYS">
+                                            <font>
+                                                <Font size="35.0" />
+                                            </font>
+                                            <padding>
+                                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                            </padding>
+                                            <graphic>
+                                                <FontAwesomeIconView fill="#ffac41" glyphName="INFO" size="40" wrappingWidth="15.285714149475098" />
+                                            </graphic>
+                                        </JFXButton>
+                                    </children>
+                                    <effect>
+                                        <DropShadow color="#ffac41" />
+                                    </effect>
+                                </VBox>
+                                <VBox layoutX="10.0" layoutY="240.0" GridPane.rowIndex="2">
+                                    <children>
+                                        <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="150.0" minWidth="200.0" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-border-radius: 7;" text="  بحث  " textFill="#ffac41" VBox.vgrow="ALWAYS">
+                                            <font>
+                                                <Font size="35.0" />
+                                            </font>
+                                            <padding>
+                                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                            </padding>
+                                            <graphic>
+                                                <FontAwesomeIconView fill="#ffac41" glyphName="SEARCH" size="40" wrappingWidth="15.285714149475098" />
+                                            </graphic>
+                                        </JFXButton>
+                                    </children>
+                                    <effect>
+                                        <DropShadow color="#ffac41" />
+                                    </effect>
+                                </VBox>
+                                <VBox layoutX="10.0" layoutY="500.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                    <children>
+                                        <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="150.0" minWidth="200.0" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-border-radius: 7;" text="  إضافة  " textFill="#ffac41" VBox.vgrow="ALWAYS">
+                                            <font>
+                                                <Font size="35.0" />
+                                            </font>
+                                            <padding>
+                                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                            </padding>
+                                            <graphic>
+                                                <FontAwesomeIconView fill="#ffac41" glyphName="PLUS" size="40" wrappingWidth="15.285714149475098" />
+                                            </graphic>
+                                        </JFXButton>
+                                    </children>
+                                    <effect>
+                                        <DropShadow color="#ffac41" />
+                                    </effect>
+                                </VBox>
+                            </children>
+                            <padding>
+                                <Insets left="50.0" right="50.0" />
+                            </padding>
+                        </GridPane>
+                    </children>
+                    <padding>
+                        <Insets bottom="50.0" />
+                    </padding>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

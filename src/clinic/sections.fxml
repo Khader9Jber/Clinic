@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="800.0" minWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.NonPersonList">
+   <children>
+      <ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="300.0" style="-fx-background-color: #323232;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <VBox nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #323232;">
+               <children>
+                  <AnchorPane minHeight="95.0" prefHeight="95.0" style="-fx-background-color: #000; -fx-background-radius: 20;">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <Label fx:id="title" layoutX="272.0" layoutY="65.0" text="الأقسام في العيادة" textFill="#ffac41" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="35.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="add" alignment="CENTER" contentDisplay="CENTER" layoutX="65.0" layoutY="128.0" minHeight="50.0" minWidth="50.0" style="-fx-border-radius: 100; -fx-background-radius: 100;" text=" " textFill="#ffac41" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="70.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="#ffac41" glyphName="PLUS" size="30" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="search" alignment="CENTER" contentDisplay="CENTER" layoutX="143.0" layoutY="128.0" minHeight="50.0" minWidth="50.0" style="-fx-border-radius: 100; -fx-background-radius: 100;" text=" " textFill="#ffac41" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="130.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="#ffac41" glyphName="SEARCH" size="30" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <VBox fx:id="container">
+                     <children>
+                        <AnchorPane prefHeight="200.0" style="-fx-background-color: #000; -fx-background-radius: 20;">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <children>
+                              <VBox alignment="TOP_CENTER" layoutX="344.0" layoutY="35.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label text="قسم العظام" textFill="#ffac41">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <HBox alignment="CENTER">
+                                       <children>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="200.0" text="الحالات النشطة" textFill="#323232">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="239.0" layoutY="10.0" prefWidth="200.0" text="الموظفون" textFill="#323232">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="289.0" layoutY="10.0" prefWidth="200.0" text="الخدمات" textFill="#323232">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="90.0">
+                                       <children>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="200.0" text="20" textFill="#ff1e56">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="239.0" layoutY="10.0" prefWidth="200.0" text="20" textFill="#ff1e56">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="289.0" layoutY="10.0" prefWidth="200.0" text="15" textFill="#ff1e56">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <JFXButton layoutX="65.0" layoutY="128.0" style="-fx-border-color: #ffac41; -fx-border-radius: 5; -fx-background-radius: 5;" text="حذف" textFill="#ffac41" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="65.0">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="143.0" layoutY="128.0" style="-fx-border-color: #ffac41; -fx-border-radius: 5; -fx-background-radius: 5;" text="تحرير" textFill="#ffac41" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="130.0">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" style="-fx-background-color: #000; -fx-background-radius: 20;">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <children>
+                              <VBox alignment="TOP_CENTER" layoutX="344.0" layoutY="35.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label text="قسم العظام" textFill="#ffac41">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <HBox alignment="CENTER">
+                                       <children>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="200.0" text="الحالات النشطة" textFill="#323232">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="239.0" layoutY="10.0" prefWidth="200.0" text="الموظفون" textFill="#323232">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="289.0" layoutY="10.0" prefWidth="200.0" text="الخدمات" textFill="#323232">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="90.0">
+                                       <children>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="200.0" text="20" textFill="#ff1e56">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="239.0" layoutY="10.0" prefWidth="200.0" text="20" textFill="#ff1e56">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="289.0" layoutY="10.0" prefWidth="200.0" text="15" textFill="#ff1e56">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <JFXButton layoutX="65.0" layoutY="128.0" style="-fx-border-color: #ffac41; -fx-border-radius: 5; -fx-background-radius: 5;" text="حذف" textFill="#ffac41" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="65.0">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="143.0" layoutY="128.0" style="-fx-border-color: #ffac41; -fx-border-radius: 5; -fx-background-radius: 5;" text="تحرير" textFill="#ffac41" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="130.0">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="40.0" right="40.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="50.0" left="40.0" right="40.0" top="50.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

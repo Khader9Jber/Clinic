@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.views.account.AccountController">
+   <content>
+      <VBox style="-fx-background-color: #323232;">
+         <children>
+            <AnchorPane maxHeight="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+               <children>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 7;" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="260.0">
+                     <children>
+                        <GridPane layoutY="47.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="49.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="49.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <AnchorPane style="-fx-background-color: #000; -fx-background-radius: 7;">
+                                 <children>
+                                    <Label text="بيانات القسم" textFill="#ffac41" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="65.0" text="المهنة" textFill="#323232" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="121.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="title" layoutX="20.0" layoutY="75.0" text="طبيب" textFill="#ff1e56" AnchorPane.leftAnchor="85.0" AnchorPane.topAnchor="121.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="20.0" layoutY="75.0" text="الغرفة" textFill="#323232" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="88.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="room" layoutX="30.0" layoutY="85.0" text="A206" textFill="#ff1e56" AnchorPane.leftAnchor="85.0" AnchorPane.topAnchor="88.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="30.0" layoutY="85.0" text="الاسم" textFill="#323232" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="55.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="section" layoutX="40.0" layoutY="95.0" text="العظام" textFill="#ff1e56" AnchorPane.leftAnchor="85.0" AnchorPane.topAnchor="55.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </AnchorPane>
+                              <AnchorPane style="-fx-background-color: #000; -fx-background-radius: 7;" GridPane.columnIndex="2">
+                                 <children>
+                                    <Label text="بيانات" textFill="#ffac41" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="65.0" text="العنوان" textFill="#323232" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="88.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="address" layoutX="20.0" layoutY="75.0" text="غزة/التفاح" textFill="#ff1e56" AnchorPane.leftAnchor="85.0" AnchorPane.topAnchor="88.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="20.0" layoutY="75.0" text="الرقم" textFill="#323232" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="55.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="id" layoutX="30.0" layoutY="85.0" textFill="#ff1e56" AnchorPane.leftAnchor="85.0" AnchorPane.topAnchor="55.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="30.0" layoutY="85.0" text="الميلاد" textFill="#323232" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="121.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="date" layoutX="40.0" layoutY="95.0" text="21/sep/2000" textFill="#ff1e56" AnchorPane.leftAnchor="85.0" AnchorPane.topAnchor="121.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </AnchorPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" style="-fx-background-color: #000; -fx-background-radius: 7;" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+                     <children>
+                        <Label fx:id="name" text="خضر جبر كراجة" textFill="#ffac41" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="20.0">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutY="47.0" AnchorPane.bottomAnchor="-20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="30.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="30.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Circle fx:id="image" fill="#323232" radius="70.0" stroke="#ffac41" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+                                 <effect>
+                                    <DropShadow />
+                                 </effect></Circle>
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </GridPane>
+                     </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane layoutX="-70.0" layoutY="-70.0" prefHeight="60.0" style="-fx-background-color: #000; -fx-background-radius: 7;" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="480.0">
+                     <children>
+                        <Label layoutX="361.0" layoutY="5.0" text="التواصل" textFill="#ffac41" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="15.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="email" layoutX="101.0" layoutY="17.0" text="khader2020kh@gmail.com" textFill="#ff1e56" AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="15.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="phone" layoutX="111.0" layoutY="27.0" text="0597783891" textFill="#ff1e56" AnchorPane.leftAnchor="410.0" AnchorPane.topAnchor="15.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </AnchorPane>
+               </children>
+               <padding>
+                  <Insets bottom="30.0" left="50.0" right="50.0" top="30.0" />
+               </padding>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

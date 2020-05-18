@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" minHeight="350.0" minWidth="20.0" prefWidth="50.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.components.navigation.NavigationDrawer">
+   <children>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="200.0" focusTraversable="true" mouseTransparent="true" nodeOrientation="RIGHT_TO_LEFT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <JFXHamburger fx:id="burger" layoutX="10.0" layoutY="30.0" />
+   </children>
+</AnchorPane>

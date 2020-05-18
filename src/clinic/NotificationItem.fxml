@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.text.Font?>
+
+<JFXButton fx:id="main" alignment="CENTER_RIGHT" minHeight="40.0" minWidth="200.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: ffac41;" stylesheets="@styles/buttonItem.css" text="خضر خضير" textFill="#ffac41" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.NotificationItem">
+   <font>
+      <Font size="20.0" />
+   </font>
+</JFXButton>

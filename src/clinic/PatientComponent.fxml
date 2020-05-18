@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="100.0" minWidth="100.0" style="-fx-background-color: #000; -fx-border-radius: 7; -fx-background-radius: 7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.PatientComponent">
+   <children>
+      <JFXButton fx:id="details" contentDisplay="RIGHT" layoutX="-56.0" layoutY="-10.0" prefWidth="400.0" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-width: 3;" text="خضر جبر كراجة" textFill="#ffac41" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <padding>
+            <Insets bottom="20.0" left="100.0" right="60.0" top="20.0" />
+         </padding>
+      </JFXButton>
+      <Circle fx:id="image" fill="#323232" layoutX="36.0" layoutY="28.0" radius="45.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="15.0" />
+      <JFXButton fx:id="add" alignment="CENTER" contentDisplay="CENTER" layoutX="334.0" layoutY="38.0" minHeight="30.0" minWidth="30.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 50;" text=" " textFill="#ffac41" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="45.0">
+         <graphic>
+            <FontAwesomeIconView fill="#ffac41" glyphName="PLUS" size="30" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

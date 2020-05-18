@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.ToggleButtonGroup?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" prefHeight="500.0" prefWidth="425.0" style="-fx-background-color: #323232; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.AddBillService">
+   <children>
+      <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="120.0" layoutY="170.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #323232;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="170.0">
+         <content>
+            <VBox fx:id="flow" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #323232;" />
+         </content>
+      </ScrollPane>
+      <AnchorPane layoutX="-48.0" layoutY="-50.0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #000; -fx-background-radius: 7;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label text="تحويل" textFill="#ffac41" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="30.0">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <ToggleButtonGroup selectionType="SINGLE" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="100.0">
+               <toggles>
+                  <JFXRadioButton fx:id="doctor" nodeOrientation="RIGHT_TO_LEFT" stylesheets="@styles/radio.css" text="طبيب" textFill="#ffac41">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="service" nodeOrientation="RIGHT_TO_LEFT" stylesheets="@styles/radio.css" text="خدمة" textFill="#ffac41">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXRadioButton>
+               </toggles>
+            </ToggleButtonGroup>
+            <AnchorPane layoutX="205.0" layoutY="100.0" minWidth="0.0" prefHeight="0.0" prefWidth="150.0" style="-fx-background-color: #323232;" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <JFXComboBox fx:id="section" focusColor="#ffac41" labelFloat="true" layoutX="150.0" nodeOrientation="RIGHT_TO_LEFT" prefWidth="150.0" promptText="القسم" styleClass="jfx-text-field" unFocusColor="BLACK" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <stylesheets>
+                        <URL value="@formDesign.css" />
+                        <URL value="@ComboBox.css" />
+                     </stylesheets>
+                  </JFXComboBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="cancle" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="26.0" minHeight="40.0" minWidth="40.0" prefHeight="40.0" prefWidth="40.0" style="-fx-border-radius: 7; -fx-background-radius: 7;" text=" " textFill="#ffac41" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="#ffac41" glyphName="CLOSE" size="35" />
+         </graphic>
+      </JFXButton>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

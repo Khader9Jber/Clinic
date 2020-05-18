@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" prefHeight="500.0" prefWidth="425.0" style="-fx-background-color: #323232; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.SaveBillService">
+   <children>
+      <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="120.0" layoutY="170.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #323232;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <content>
+            <VBox fx:id="flow" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #323232;">
+               <children>
+                  <JFXTextArea fx:id="note" focusColor="#ffac41" nodeOrientation="RIGHT_TO_LEFT" prefColumnCount="30" promptText="الملاحظات" style="-fx-background-color: #444; -fx-background-radius: 5;" stylesheets="@styles/formDesign.css" unFocusColor="#ffac41" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </JFXTextArea>
+               </children></VBox>
+         </content>
+      </ScrollPane>
+      <AnchorPane layoutX="-48.0" layoutY="-50.0" prefWidth="200.0" style="-fx-background-color: #000; -fx-background-radius: 7;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label text="تحويل" textFill="#ffac41" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="save" alignment="CENTER" contentDisplay="CENTER" layoutX="59.0" layoutY="10.0" minHeight="40.0" minWidth="40.0" prefHeight="40.0" prefWidth="40.0" style="-fx-border-radius: 7; -fx-background-radius: 7;" text=" " textFill="#ffac41" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#ffac41" glyphName="SAVE" size="35" />
+               </graphic>
+            </JFXButton>
+            <JFXTextField fx:id="count" alignment="CENTER" layoutX="115.0" layoutY="20.0" prefWidth="50.0" promptText="العدد" styleClass="number" stylesheets="@styles/formDesign.css" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="15.0" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" />
+         </padding>
+      </AnchorPane>
+      <JFXButton fx:id="cancle" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="26.0" minHeight="40.0" minWidth="40.0" prefHeight="40.0" prefWidth="40.0" style="-fx-border-radius: 7; -fx-background-radius: 7;" text=" " textFill="#ffac41" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="#ffac41" glyphName="CLOSE" size="35" />
+         </graphic>
+      </JFXButton>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

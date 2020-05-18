@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="submit" maxHeight="1.7976931348623157E308" prefHeight="500.0" prefWidth="426.0" style="-fx-background-color: #323232; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.Alert">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <effect>
+      <DropShadow />
+   </effect>
+   <children>
+      <HBox alignment="CENTER" layoutX="63.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="icon" fitHeight="400.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/checkcolor.gif" />
+               </image>
+               <viewport>
+                  <Rectangle2D minX="200.0" minY="200.0" />
+               </viewport>
+            </ImageView>
+         </children>
+      </HBox>
+      <Label fx:id="text" alignment="CENTER" contentDisplay="CENTER" layoutX="105.0" layoutY="277.0" prefHeight="17.0" prefWidth="184.0" text="تم الحفظ بنجاح" textFill="#ffac41" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="300.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="ok" layoutX="192.0" layoutY="355.0" style="-fx-border-radius: 5; -fx-border-color: #ffac41;" text="موافق" textFill="#ffac41" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="170.0" AnchorPane.topAnchor="350.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="cancle" alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="31.0" minHeight="35.0" minWidth="35.0" prefHeight="35.0" prefWidth="35.0" style="-fx-border-radius: 5;" text=" " textFill="#ffac41">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="#ffac41" glyphName="CLOSE" size="30" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

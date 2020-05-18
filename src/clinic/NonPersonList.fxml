@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="800.0" minWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.NonPersonList">
+   <children>
+      <ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="300.0" style="-fx-background-color: #323232;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <VBox nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #323232;">
+               <children>
+                  <AnchorPane minHeight="95.0" prefHeight="95.0" style="-fx-background-color: #000; -fx-background-radius: 20;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <Label fx:id="title" layoutX="272.0" layoutY="65.0" text="الأقسام في العيادة" textFill="#ffac41" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="35.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="add" alignment="CENTER" contentDisplay="CENTER" layoutX="65.0" layoutY="128.0" minHeight="50.0" minWidth="50.0" style="-fx-border-radius: 100; -fx-background-radius: 100;" text=" " textFill="#ffac41" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="70.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="#ffac41" glyphName="PLUS" size="30" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="search" alignment="CENTER" contentDisplay="CENTER" layoutX="143.0" layoutY="128.0" minHeight="50.0" minWidth="50.0" style="-fx-border-radius: 100; -fx-background-radius: 100;" text=" " textFill="#ffac41" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="130.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="#ffac41" glyphName="SEARCH" size="30" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <VBox fx:id="container">
+                     <VBox.margin>
+                        <Insets bottom="50.0" left="40.0" right="40.0" top="50.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="50.0" left="40.0" right="40.0" top="50.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

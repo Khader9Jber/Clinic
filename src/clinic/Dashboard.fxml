@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" style="-fx-background-color: #323232;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.DashboardController">
+   <content>
+      <VBox style="-fx-background-color: #323232;">
+         <children>
+            <AnchorPane VBox.vgrow="ALWAYS">
+               <children>
+                  <Label text="الصفحة الرئيسة" textFill="#ffac41" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label text="الاستقبال / الجهاز 1" textFill="#ff1e56" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0" />
+               </children>
+               <padding>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </padding>
+            </AnchorPane>
+            <AnchorPane maxHeight="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label prefHeight="51.0" prefWidth="277.0" text="إحصائيات" textFill="#ffac41" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="20.0">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane fx:id="pane" layoutX="37.0" layoutY="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+                     <children>
+                        <JFXButton layoutX="262.0" layoutY="-7.0" prefHeight="150.0" prefWidth="320.0" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #ffac41; -fx-border-width: 3;" text="   المرضى" textFill="#ffac41">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                           <graphic>
+                              <FontAwesomeIconView fill="#ffac41" glyphName="USER" size="40" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton layoutX="262.0" layoutY="-7.0" prefHeight="150.0" prefWidth="320.0" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #ffac41; -fx-border-width: 3;" text="  الأطباء" textFill="#ffac41">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                           <graphic>
+                              <FontAwesomeIconView fill="#ffac41" glyphName="USER_MD" size="40" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton layoutX="446.0" layoutY="-7.0" prefHeight="150.0" prefWidth="320.0" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #ffac41; -fx-border-width: 3;" text="    الأقسام  " textFill="#ffac41">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                           <graphic>
+                              <FontAwesomeIconView fill="#ffac41" glyphName="SERVER" size="40" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton layoutX="432.0" layoutY="10.0" prefHeight="150.0" prefWidth="320.0" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #ffac41; -fx-border-width: 3;" text="  الأدوية" textFill="#ffac41">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                           <graphic>
+                              <FontAwesomeIconView fill="#ffac41" glyphName="STETHOSCOPE" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" layoutX="186.0" layoutY="5.0" prefHeight="150.0" prefWidth="320.0" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #ffac41; -fx-border-width: 3;" text="  الخدمات " textFill="#ffac41">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                           <graphic>
+                              <FontAwesomeIconView fill="#ffac41" glyphName="INFO" size="40" wrappingWidth="15.285714149475098" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton layoutX="104.0" prefHeight="150.0" prefWidth="320.0" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #ffac41; -fx-border-width: 3;" text="   الزيارات" textFill="#ffac41">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                           <graphic>
+                              <FontAwesomeIconView fill="#ffac41" glyphName="GROUP" size="40" text="" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

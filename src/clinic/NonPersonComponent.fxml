@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="200.0" style="-fx-background-color: #000; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.NonPersonComponent">
+   <effect>
+      <DropShadow />
+   </effect>
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="344.0" layoutY="35.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="name" text="قسم العظام" textFill="#ffac41">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label fx:id="name3" alignment="CENTER" contentDisplay="CENTER" prefWidth="200.0" text=" الخدمات" textFill="#323232">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="name2" alignment="CENTER" contentDisplay="CENTER" layoutX="239.0" layoutY="10.0" prefWidth="200.0" text="الموظفون" textFill="#323232">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="name1" alignment="CENTER" contentDisplay="CENTER" layoutX="289.0" layoutY="10.0" prefWidth="200.0" text="الرقم" textFill="#323232">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="90.0">
+               <children>
+                  <Label fx:id="num3" alignment="CENTER" contentDisplay="CENTER" prefWidth="200.0" text="20" textFill="#ff1e56">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="num2" alignment="CENTER" contentDisplay="CENTER" layoutX="239.0" layoutY="10.0" prefWidth="200.0" text="20" textFill="#ff1e56">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="num1" alignment="CENTER" contentDisplay="CENTER" layoutX="289.0" layoutY="10.0" prefWidth="200.0" text="15" textFill="#ff1e56">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <JFXButton fx:id="delete" alignment="CENTER" contentDisplay="CENTER" layoutX="65.0" layoutY="128.0" minHeight="25.0" minWidth="25.0" prefHeight="35.0" prefWidth="35.0" style="-fx-border-radius: 5; -fx-background-radius: 5;" text=" " textFill="#ff1e56" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="65.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="#ff1e56" glyphName="TRASH" size="20" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="edit" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="143.0" layoutY="128.0" minHeight="25.0" minWidth="25.0" prefHeight="35.0" prefWidth="35.0" style="-fx-border-radius: 5; -fx-background-radius: 5;" text=" " textFill="#ffac41" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="#ffac41" glyphName="EDIT" size="20" text="" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
